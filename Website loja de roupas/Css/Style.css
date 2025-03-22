@@ -1,0 +1,99 @@
+/* Estilo da fonte */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    padding: 90px 20px 0;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+}
+
+.navbar button {
+    border: none;
+    background-color: black;
+    padding: 0 1rem;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.item-flex {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.item-grid {
+    text-align: center;
+}
+
+.grid-item-img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.descrip-price {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+.monserrat-tarjeta, .monserrat-price {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: black;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 1rem;
+    color: white;
+}
+
+.footer-container img {
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
